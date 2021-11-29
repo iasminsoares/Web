@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variáveis no CSS</title>
+	<meta charset="utf-8">
+
+	<style type="">
+		:root {
+			--bg-color: blue;
+			--cor-do-texto: #fff;
+			--espacamento: 20px;
+			--div2-color: red;
+			--div3-color: purple;
+		}
+
+		#div1 {
+			background-color: var(--bg-color);
+			color: var(--cor-do-texto);
+			padding: var(--espacamento);
+		}
+
+		#div2 {
+			background-color: var(--div2-color);
+			color: var(--cor-do-texto);
+			padding: var(--espacamento);
+		}
+		#div3 {
+			background-color: var(--div3-color);
+			color: var(--cor-do-texto);
+			padding: var(--espacamento);
+		}
+	</style>
+
+</head>
+<body>
+	<div id="div1">
+		<p>
+			Variáveis no CSS devem ser declaradas dentro de um seletor CSS que define seu escopo.
+		</p>
+	</div>
+	<div id="div2">
+		<p>
+			Variáveis no CSS devem ser declaradas dentro de um seletor CSS que define seu escopo.
+		</p>
+	</div>
+	<div id="div3">
+		<p>
+			Variáveis no CSS devem ser declaradas dentro de um seletor CSS que define seu escopo.
+		</p>
+	</div>
+</body>
+</html>

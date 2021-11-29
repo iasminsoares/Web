@@ -1,0 +1,43 @@
+/*FONTES INTERNAS FIXAS NO NAVEGADOR 
+* {
+	font-size: 100%; 
+}
+
+p{
+	font-family: Arial, "Times New Roman", serif; o navegador procura primeiro pelo Times, senão encontrar, Times new roman,
+													senão encontrar procura a fonte genérica Serif
+	font-variant: small-caps;
+	font-weight: bold; negrito 
+	font-style: italic; italico e oblique 
+	font-size: 1em;  equivalente ao valor padrão do navegador que é 16px, então 1em = 16px
+					para converter pra unidade relativa basta fazer
+					40px (alvo) / 16px (contexto) = 2.5em*
+}
+*/
+
+/*FONTES EXTERNAS
+*{
+	font-size: 100%;
+}
+
+@font-face {
+	font-family: arblanca;
+	src: url(arblanca-webfont.woff);
+}
+
+p{
+	font-family: arblanca;
+	font-size: 2.5em;
+}
+
+*/
+
+/*FONTES DO GOOGLE */
+*{
+	font-size: 100%;
+}
+
+p{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 2.5em;
+}

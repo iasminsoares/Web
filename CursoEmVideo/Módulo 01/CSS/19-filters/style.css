@@ -1,0 +1,13 @@
+img {
+	margin: 40px 0 0 60px;
+	/*filter: blur(4px); desfoca a imagem*/
+	/*filter: brightness(50%); altera o brilho */
+	/*filter: contrast(50%); altera o contraste */
+	/*filter: grayscale(50%); escala cinza */
+	/*filter: invert(80%); inverter as cores */
+	/*filter: opacity(60%); opacidade */
+	/*filter: saturate(70%); saturação */
+	/*filter: sepia(180%); */
+	/*filter: hue-rotate(100deg); permite mudando as cores de acordo com o angulo da propriedade hue*/
+	filter: drop-shadow(10px 20px 5px #000) contrast(50% ); /*é uma sombra - 1 paramentro horizontal, 2 paramentro vertical, 3 paramentro desfoque, 4 é a cor */
+}

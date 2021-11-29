@@ -1,0 +1,26 @@
+p{
+	color: red; /*cor do texto */
+	text-transform: capitalize; /*letras e textos maiúsculo(uppercase) ou minusculo(lowercase) */
+	text-indent: 20px; /*cria um recuo na primeira linha  */
+	text-align: justify; /*texto justificado*/
+	line-height: 30px; /*altura da linha */
+	direction: ltr; /*direção do texto; rtl - right to left / direta pra esquerda */
+	letter-spacing: 2px; /*espaçamento entre as letras*/
+	word-spacing: 2px; /*espaçamento entre as palavras*/
+}
+
+h1 {
+	text-align: left; /*alinhamento de texto a esquerda*/
+	text-decoration: underline; /*decoração de texto com risco em baixo ou none q deixa normal*/
+	text-shadow: 2px 2px 2px red ; /*sombra: horizontal, vertical , desfoque e cor da sombra*/
+
+}
+
+h2 {
+	text-align: right; /*alinhamento de texto a direita */
+	text-decoration: overline; /*decoração de texto com risco em cima*/
+}
+h3 {
+	text-align: center; /*alinhamento de texto ao centro da página*/
+	text-decoration: line-through; /*decoração de texto com risco no meio do texto */
+}

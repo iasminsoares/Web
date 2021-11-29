@@ -1,0 +1,10 @@
+body {
+	/*background-color: red;  cor de fundo 
+	background-image:url(./campeonato.jpg);
+	background-repeat: no-repeat; repeat-x horizontal, repeat y vertical
+	background-position: left top; left e right, left center ou bottom 
+	background-attachment: fixed;  deixa o elemento fixo com o padrão scroll q acompanha a barra de rolagem
+	background-size: 300px 500px;*/
+
+	background: url(./img/campeonato.jpg) center center/100% 100% no-repeat fixed;
+}

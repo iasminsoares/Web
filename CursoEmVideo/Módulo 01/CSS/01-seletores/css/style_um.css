@@ -1,0 +1,44 @@
+/* seletor universal estiliza tudo q tiver na página*/
+* {
+
+}
+
+/* seletor por tags */
+
+h1 {
+	color: white;
+}
+
+/* selector por class - q são atributos do HTML pra atribuição de nome de um elemento */
+.texto-centralizado {
+	text-align: center;
+}
+
+.fundo-colorido {
+	background: orange;
+}
+
+/* selector por div - diferença entre class: são objetos q se repetem; id é q id são objetos q não se repete */
+#conteudo {
+	background: green;
+	padding: 50px;
+}
+
+/*seletor por atributo*/
+input[type="text"] {
+	background: grey;
+	padding: 10px;
+	border: none;
+}
+
+input[type="submit"] {
+	background: red;
+	color: white;
+	padding: 10px;
+	border: none;
+}
+
+a[href="http://cahfelix.com.br"] {
+	background: red;
+	color: white;
+}

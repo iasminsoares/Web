@@ -1,0 +1,12 @@
+#conteudo { /*definindo tamanhos de altura e largura do conteúdo em relação do tamanho total da tela*/
+	background-color: green;
+	color: #FFF;
+	padding: 20px;
+	max-width: 500px; /*o max deixa o contéudo responsivo*/
+	max-height: 50px;
+	/*
+	min-width: 500px /*o min não deixa o contéudo responsivo;
+	min-height: 200px;
+	width: 400px;
+	height: 50px;*/
+}

@@ -1,0 +1,22 @@
+/* seletor universal */
+* {
+
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+	background: black;
+	color: white;
+}
+
+/* Estilizando Titulo */	
+h1, h2 {
+	background: #414141;
+	padding: 10px;
+	text-align: center;
+}

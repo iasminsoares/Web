@@ -1,0 +1,11 @@
+#conteudo {
+	background: red; 
+	width: 300px; /*largura */
+	height: 70px; /*altura*/
+	overflow: auto; /*ajusta o background de acordo com a altura; auto - cria uma barra de rolagem onde necess; visible - forma padrão; 
+					hidden - esconde a parte q não está com a sombra; scroll - cria barra de rolagem*/
+}
+
+#conteudo p {
+	opacity: 0.5; /*transparencia do texto */
+}

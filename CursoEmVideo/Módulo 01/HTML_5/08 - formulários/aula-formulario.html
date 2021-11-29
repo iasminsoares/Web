@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>AULA de HTML</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<h1>Formularios HTML - Monte seu formulário</h1>
+
+	<!-- Sempre quando for fazer um site ou formulário, pensar em ACESSIBILIDADE
+		 automaticatimente, use as tags LABEL e INPUT -->
+
+	<form>
+		<fieldset> <!-- separação de grupos dentro de formulários-->
+			<legend>CADASTRE-SE</legend> <!--Criar legendas dentro dos grupos de formulários -->
+
+				<label for="nome"> Nome: </label> 
+				<input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="15" required=""> <!-- input recebe vários paramentros -->
+
+				<label for="sobrenome">	Sobrenome: </label>
+				<input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu nome" maxlength="20">
+
+				<label for="email"> E-mail: </label>
+				<input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+
+				<label for="senha"> Senha: </label> 
+				<input type="password" name="senha" id="senha" placeholder="Digite sua senha" required="">
+
+				<label for="idade"> Idade: </label>
+				<input type="number" name="idade" id="idade" placeholder="Digite sua idade"><br><br>
+
+				<label for="telefone"> Telefone: </label>
+				<input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+
+
+		</fieldset><br>
+
+		<fieldset>
+			<legend>OUTRAS INFORMACOES</legend>
+
+				Sexo:
+				<input type="radio" name="sexo">Feminino <!-- SEMPRE MANTER O atributo name com o mesmo nome pra não dar erro -->
+				<input type="radio" name="sexo" required="">masculino
+
+				<label for="nascimento"> Data de nascimento: </label>
+				<input type="date" name="nascimento" id="nascimento" required="">
+
+				<select name="estado" id="estado"> Estado:
+					<optgroup label="Sudeste">
+						<option value="MG" selected>Minas Gerais</option>
+						<option value="SP">São Paulo</option> <!--o atributo value neste caso é o vai pro banco de dados, ou email qnd o formulário é submetido-->
+						<option value="RJ">Rio de Janeiro</option> 
+						<option value="ES">Espirito Santo</option>
+					</optgroup>
+
+					<optgroup label="Sul">
+						<option value="PR">Paraná</option>
+						<option value="SC">Santa Catarina</option> <!--o atributo value neste caso é o vai pro banco de dados, ou email qnd o formulário é submetido-->
+						<option value="RS">Rio Grande do Sul</option> 
+					</optgroup>
+				</select>
+
+				<label for="cidade"> Cidades: </label>
+				<input type="text" name="cidade" placeholder="Digite sua cidade" list="cidades" required="">
+				<datalist id="cidades"> <!-- serve para listar as cidades, prédefinida -->
+					<option value="Osasco, SP"></option>
+					<option value="Belo Horizonte, MG"></option>
+					<option value="Rio de Janeiro, RJ"></option>
+					<option value="Vitória, ES"></option>
+					<option value="Curitiba, PR"></option>
+					<option value="Florianópolis, SC"></option>
+					<option value="Porto Alegre, RS"></option>
+				</datalist>
+		</fieldset><br>
+
+		<fieldset>
+			<legend>ESCOLHA SUAS EQUIPES PREFERIDAS NACIONAIS</legend>
+				<input type="checkbox" name="nacionais" id="GB" value="Gracie Barra"> <label for="GB">Gracie Barra</label>
+				<input type="checkbox" name="nacionais" id="GF" value="GF TEAM"> <label for="GF">GF TEAM </label> 
+				<input type="checkbox" name="nacionais" id="AL" value="Almeida JJ"> <label for="AL">Almeida JJ</label> 
+		</fieldset><br>
+
+		<fieldset>
+			<legend>ESCOLHA SUAS EQUIPES PREFERIDAS INTERNACIONAIS</legend>
+				<input type="checkbox" name="internacionais" id="AT" value="Atos hq"> <label for="AT">Atos hq</label> 
+				<input type="checkbox" name="internacionais" id="FG" value="Figth Sports"> <label for="FG">Figth Sports</label> 
+				<input type="checkbox" name="internacionais" id="AV" value="Aviv Jiu-Jitsu"> <label for="AV">Aviv Jiu-Jitsu</label> 
+		</fieldset><br>
+
+		<fieldset>
+			<legend>ENVIE UMA MENSAGEM</legend> 
+			Mensagem:<br>
+			<textarea name="" id="" cols="80" rows="5"></textarea><br><br>
+		</fieldset><br>
+		
+		<fieldset>
+			<legend>OUTROS CAMPOS INTERESSANTES</legend>
+			Nível:
+			<input type="range" min="1" max="20" step="5"><br><br>
+			Hora:
+			<input type="time" name="hora"><br><br>
+			Mês e ano:
+			<input type="month" name="mes-ano"><br><br>
+			Semana: 
+			<input type="week" name="Semana"><br><br>
+			Data e hora:
+			<input type="datetime-local" name="data-e-hora"><br><br>
+			Cor:
+			<input type="color"><br><br>
+			Imagem: <br>
+			<input type="file" name="imagem"><br><br>
+
+			Quantidade: <br>
+			<input type="number" name="quantidade" min="1" max="10"><br><br>
+
+			<input type="hidden" name="id"><br>
+
+			URL:<br>
+			<input type="url" name="site"><br><br>
+
+			Pesquisar:<br>
+			<input type="search" name="pesquisa"><br><br>
+
+		</fieldset>
+		<br>
+		 <button type="submit">ENVIAR</button> 
+		 <button type="reset">LIMPAR</button>
+	</form>	
+</body>
+
+</html>

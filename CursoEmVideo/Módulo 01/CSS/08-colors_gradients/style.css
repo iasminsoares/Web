@@ -1,0 +1,18 @@
+/*
+TRABALHANDO COM CORES
+#cores {
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	background-color: rgba(230, 89, 225, 0.5); o 'a' no final representa a opacidade com 0.5 
+	background-color: hsl(230. 89, 223);*
+}*/
+
+/*TRABALHANDO COM GRADIENTES*/
+
+#cores {
+	width: 200px;
+	height: 200px;
+	/* background: linear-gradient(to right, rgba(255,0,0,0), red, blue);  defininir direção do gradiente: to left, to top, to top left - diagonal*/
+	background: radial-gradient(red, green); /*a diferença que o radiol é o efeito pelo centro */
+}

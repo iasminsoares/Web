@@ -1,0 +1,19 @@
+/*PROPRIEDADE TRANSITION - SERVE PRA SUAVIZAR A TRANSIÇÃO ENTRE OS ELEMENTOS */
+
+#exemplo {
+	width: 200px;
+	height: 200px; 
+	background-color: red;
+	transition: all 2s linear 1s; /*maneira mais fácil e limpa */
+	/*transition: width 2s linear 1s, height 2s linear; 
+	transition-property: width; 
+	transition-duration: 2s; tempo da transição 
+	transition-timing-function: linear; dita o ritmo da transição, temos: ease,  ease-in; ease-out; ease-in-out; linear 
+	transition-delay: 2s ; tempo de espera pra iniciar a transição*/
+}
+
+#exemplo:hover { /*pseudo classe - controla o estado do elemento qnd passa o mouse por cima*/
+	width: 350px;
+	height: 350px;
+	background-color: green;
+}

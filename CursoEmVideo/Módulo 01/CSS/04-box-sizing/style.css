@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box; /*corrige o tamanho fixo do elemento de largura e preenchimento
+	ao utilizar dentro do seletor universal, toda vez q usar o padding não vai alterar o valor determinado no elemento  */
+}
+
+
+#conteudo {
+	background: red;
+	width: 300px; /*largura */
+	padding: 20px; /*preenchimento */
+	box-shadow: 10px 10px 5px green; /*posição da sombra: vertical, horizonta, desfoque e cor ; */
+	
+}

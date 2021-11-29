@@ -1,0 +1,114 @@
+/*========= RESET ========*/
+
+*{ margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/*====== CONTAINER ======= otmizando as propriedades iguais*/
+.container {width: 100%; float: left; padding: 3% 4%; text-align: center;}
+
+/*====== BG COLORS ======= otmizando as CORES iguais*/
+.bg-gradient {background: linear-gradient(to right, #ce2e3c, #da6709);}
+.bg-black {background-color: #130400;}
+.bg-white {background-color: #fff;}
+
+/*====== HELPERS ======= otmizando as bordas iguais*/
+.radius {border-radius: 7px;}
+
+/*====== cor de fontes ======= otmizando as cores de fontes iguais*/
+.cor-fonte {color: #fff;}
+
+/*========= CABEÇALHO -HEADER  ========*/
+/*o padding é um espaçamento interno */
+.logo {width: 56px; height: 56px; float: left; background: url(../img/logo-mobile.png) center center/56px no-repeat; font-size: 0;}
+.btn-menu {width: 56px; height: 56px; float: right; text-align: center;  border-radius: 56px; cursor: pointer;}
+
+/*========= MENU - NAV  ========*/
+.menu {display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;} /*background com gradiente*/
+.btn-close {font-size: 1.5em; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.menu ul {width: 100%; float: left; text-align: center;} /*text-align pra deixar os itens centralizados*/
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;} 
+.menu li a:hover{border: 1px solid #da6709;}
+
+/* DIV - BANNER */
+.banner {background: url(../img/bg.jpg) no-repeat fixed;}
+.title {width: 100%;}
+.title h2 {font-size: 2.5em; font-weight: 700;}
+.title h3 {font-size: 1.5em;}
+.buttons {width: 100%; margin-top: 2%;}
+.buttons i {float: right;}
+.btn {width: 100%; font-size: 1.5em; text-align: left; cursor: pointer; padding: 5%;}
+.btn-cadastrar {color: #130400;}
+.btn-sobre {margin-top: 2%;}
+
+/* SERVIÇOS MAIN E ARTICLE */
+.servico {width: 100%; text-align: left; margin-bottom: 3%;}
+.servico img {border-radius: 7px 7px 0 0;}
+.inner {padding: 7%;}
+.inner a {font-size: 1.5em; color: #130400; font-weight: 700;}
+.inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%;}
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+
+/* NEWSLETTER */
+.newsletter h2 {font-size: 1.5em; font-weight: 700;}
+.newsleter form {margin-top: 2%;}
+.newsletter input {width:100%; margin-top: 1%; border: 1px solid rgba(255,255,255,0.3); padding: 5%;}
+.newsletter button {width: 100%; color: #130400; padding: 5%; cursor: pointer; margin-top: 2%; }
+
+/* RODAPÉ FOOTER */
+.social-icons a {font-size: 1.5em; color: rgba(255,255,255,0.7); margin-right: 3%;}
+.social-icons a:last-child {margin-right: 0;} /*zerando a margin do ultimo elementos dos icones*/
+.social-icons a:hover {color: rgb(255,255,255); }
+.copyright {margin-top: 2%; color: rgba(255,255,255,0.7); }
+
+/* MEDIA TYPES 
+MEDIA QUERIES - é a utilização de media types com uma ou mais expressão envolvendo caracteristicas de uma media para definir formatações para diversos dispositivos.
+MEDIA QUERIES - Traduzido do inglês-Consultas de mídia é um módulo CSS3 que permite que a renderização de conteúdo se adapte a condições como resolução de tela.
+SCREEN - Para monitores ou dispositivos com telas coloridas e resolução adequada. 
+PRINT - Para impressores, muito usado para dar uma versão de impressão do site. 
+Para o site responsivo, utilizamos o screen para criar os mideas querys: é a utilizãção de um midea type (screen) e pelo menos uma expressão.
+
+@media screen and (min-width: 320px) {} */
+
+/* BREAKPOINTS - PONTOS DE AJUSTES / MOBILE FIRST */
+/* SMALL DEVICES - SMARTPHONES -> ajusta as propriedades de acordo com o tamanho de cada dispositivo */
+@media screen and (min-width: 667px) {
+.logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat;}
+.btn {font-size: 2em;}
+}
+
+/*SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px) {
+.servico {width: 49%; float: left; margin-right: 2%;}
+.servico:nth-child(2){margin-right: 0;} /*selecionando o segundo elemento da classe servico dentro do article e zerando a margem para ficar ao lado do primeiro elemento quando aumentar a tela */
+.newsletter h2 {font-size: 2em;}
+.newsletter h3 {font-size: 1.5em;}
+.newsletter input {width: 70%; padding: 2%; float: left; margin-right: 1%;}
+.newsletter button {width: 29%; padding: 2%; float: right; margin-top: 1%;}
+}
+
+/*MEDIUM DEVICES - TABLETES & DESKTOPS */
+@media screen and (min-width: 960px) {
+.title {width: 70%; float: left; text-align: left;}
+.title h2 {font-size: 3em;}
+.title h3 {font-size: 2em;}
+.buttons {width: 30%; float: right; margin-top: 0;}
+.servico {width: 32%;} /*32x3 = 96% e fica 4% para as margens.*/
+.servico:nth-child(2){margin-right: 2%;}
+.servico:nth-child(3){margin-right: 0;}
+.newsletter input {width: 60%; float: none;}
+.newsletter button {width: 20%; float: none;}
+}
+
+/* LARGE DEVICES - WIDE SCREENS -> ajusta as propriedades de acordo com o tamanho de cada dispositivo */
+@media screen and (min-width: 667px) {
+.btn-menu {display: none;} /*tirando o botão menu*/
+.btn-close {display: none;}
+.menu {width: auto; height: 56px; line-height: 56px; float: right;background-color: #f5f5f5; display: block !important; position: static;} /*O !importante força o block a liberar o menu dps q fechar qnd o dispositivo for menor */
+.menu li {padding: 0; float: left;}
+.menu li a {color: #130400; font-size: 1em; padding: 15px;}
+.menu li a:hover {border: none; color: #da6709;}
+}

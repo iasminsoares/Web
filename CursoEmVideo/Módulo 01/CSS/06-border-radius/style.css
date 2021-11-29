@@ -1,0 +1,10 @@
+#bloco {
+	background-color: green; 
+	width: 300px; /*largura */
+	height: 150px; /*altura*/
+	border-radius: 0px; /*bordas arredondadas os px são pra cada lado*/
+	border-top-left-radius: 20px; /* altera somente a parte superior esquerda*/
+	border-top-right-radius: 20px; /* altera somente a parte superior direita*/
+	border-bottom-right-radius: 20px; /* altera somente a parte inferior direita*/
+	border-bottom-left-radius: 20px; /* altera somente a parte inferior esquerda*/
+}

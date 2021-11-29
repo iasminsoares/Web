@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabelas</title>
+
+	<style type="text/css">
+
+		table, th, td {border: 1px solid #000;}
+		th, td{padding: 7px;}
+		.nome {background-color: red; }
+		.email {background-color: green;}
+		.telefone {background-color: blue;}
+		.cargo {background-color: yellow;}
+	</style>
+</head>
+<body>
+	<h1>Tabela</h1>
+		<table>
+			<caption>Cadastro de cliente </caption>	
+			<colgroup> <!--grupos de tabela-->
+				<col class="nome">
+				<col class="email">
+				<col class="telefone">
+				<col class="cargo">
+			</colgroup>
+
+			<thead>
+				<tr> <!-- LINHA -->
+					<th>NOME: </th> <!-- corresponde ao título da coluna --><th>Email: </th>
+					<th>Telefone: </th>
+					<th>Cargo: </th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Iasmin </td> <!-- Corresponde ao conteúdo da linha com a coluna -->
+					<td>iasmin@gmail.com</td>
+					<td>(31)991398463</td>
+					<td rowspan="2">Desenvolvedora Web</td><!--junta as linhas-->
+				</tr>
+
+				<tr>
+					<td>Ronaldo </td> <!-- Corresponde ao conteúdo da linha com a coluna -->
+					<td>ronaldo@gmail.com</td>
+					<td>(31)991398463</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="4">Total: 2 </td> <!--Juntando as colunas-->
+				</tr>
+			</tfoot>
+		</table>
+</body>
+</html>

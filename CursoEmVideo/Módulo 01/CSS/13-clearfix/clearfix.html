@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clearfix</title>
+	<meta charset="utf-8">
+
+	<style>
+		/*Clearfix corrige os bugs de float, por isso só vai usar qnd for utilizar se for criar um layout utilizando o float
+			se for criar um layout criando flexbox não precisa
+			se for criar um layout usando um framework tb não terá acesso */
+		.container {background-color: red; width: 500px; margin: 0 auto;}
+		.box1 {background-color: green; width: 150px; height: 150px; float: left;}
+		.box2 {background-color: blue; width: 150px; height: 150px; float: right;}
+		.container::before, .container::after { /*pseudo elementos - o 'before' e o 'after permitem que add documento diretamente do css '*/
+			content: '';
+			display: table;
+		}
+
+		.container::after {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container"> <!-- div pai -->
+		<div class="box1">  <!-- div filho -->
+			
+		</div>
+		<div class="box2"> <!-- div filho -->
+			
+		</div>
+		
+	</div>
+</body>
+</html>

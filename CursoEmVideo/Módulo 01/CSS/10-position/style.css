@@ -1,0 +1,17 @@
+#conteudo {
+	width: 600px;
+	height: 1200px;
+	background-color: red;
+	position: relative; /* faz o elemento se posiconar de acordo com a div do elemento pai */
+
+}
+
+#texto {
+	width: 500px;
+	background-color: green;
+	position: absolute;
+	left: 0; top: 40px;
+	 /*Static é o padrão */
+	/*right: 0; bottom: 0; inferior a direta - left: 0; top: 0; superior a esquerda
+	 position: fixed; left: 20; top: 0; permite deixar o elemento da div fixo de acordo com a página*/
+}

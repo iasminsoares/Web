@@ -1,0 +1,65 @@
+/* seletor universal */
+* {
+
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+	background: black;
+	color: white;
+}
+
+/* estilizando os títulos */
+h1, h2 {
+	background: #414141;
+	padding: 10px;
+	text-align: center;
+}
+
+h3 {
+	background: black;
+	color: white;
+	padding: 5px;
+}
+
+.noticias {
+	background: gray;
+	display: inline-block;
+	padding: 10px;
+}
+
+/*seletores descendente são seletores filhos */
+
+.noticias h3 {
+	background: black;
+	padding: 5px;
+}
+
+.noticias:hover {
+	background: yellow; /*mudando a cor ao passar o mouse*/
+	cursor: pointer;
+}
+
+.mais-informacoes {
+	background: black;
+	padding: 5px;
+}
+
+.noticias > p { /*selecionando a tag filha*/
+	background: red;
+}
+
+/* SELETORES ADJASCENTE são seletores irmãos*/
+
+.noticias h3 + p { /*selecionando a tag irma */
+	background: blue;
+}
+
+.mais-informacoes p:not(.nao-colorir) { /*seletor de pseudo ou negação*/
+	background: orange;
+}

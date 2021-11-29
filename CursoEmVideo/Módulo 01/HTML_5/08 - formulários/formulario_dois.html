@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form id="form-cadastro" method="POST" enctype="application/x-www-form-urlencoded" name="formulario-cadastro">
+		Nome: <br><br>
+			<input type="text" name="nome"><br><br>
+
+		Quantidade: <br><br>
+			<input type="number" name="quantidade" min="1" max="10"><br>
+			<input type="submit" name="cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="GET" formaction="cadastrar.php" value="Cadastrar">
+			<input type="submit" name="enviar-por-email" formtarget="_blanck" formenctype="application/x-www-form-urlencoded" formmethod="POST" formaction="enviar-email.php" value="Enviar por email" formnovalidate="nãovalidar">
+	</form>
+
+	<!--relacionando input fora da tag form -->
+	<input type="text" name="nome" form="form-cadastro">
+</body>
+</html>
