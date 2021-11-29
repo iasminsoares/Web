@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Jquery evento - teclado</title>
+
+		<!--LOCAL - <script src="jquery-3.1.1.js"></script> -->
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready( function(){
+				
+				//keydown - capturar qualquer tipo de tecla
+				//keypress - desconsiderar as teclas ctrl, alt, shift ou alt shift s 
+				//keyup - quando a tecla é liberada
+
+				$('#campo1').keydown( function(){
+					alert('Botão foi pressionado');
+
+				});
+
+
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+		<input id="campo1" type="text" />
+	</body>
+
+</html>

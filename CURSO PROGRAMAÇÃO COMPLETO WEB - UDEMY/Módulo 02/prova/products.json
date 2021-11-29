@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Action figure Goku",
+        "price": 200.90,
+        "image": "./src/img/thumb_goku.jpg"
+    },
+    {
+        "name": "Action figure Samus",
+        "price": 120.80,
+        "image": "./src/img/thumb_samus.jpg"
+    },
+    {
+        "name": "Action figure Sub-zero",
+        "price": 200.90,
+        "image": "./src/img/thumb_subzero.jpg"
+    },
+    {
+        "name": "Action figure Link",
+        "price": 700.90,
+        "image": "./src/img/thumb_link.jpg"
+    }
+]

@@ -1,0 +1,8 @@
+Upload de arquivos com Bootstrap File Input
+No link abaixo você encontrá um exemplo de upload de múltiplos arquivos utilizando o Bootstrap File Input.
+
+Link da documentação do Bootstrap File Input: https://github.com/kartik-v/bootstrap-fileinput
+
+
+
+Bons estudos.

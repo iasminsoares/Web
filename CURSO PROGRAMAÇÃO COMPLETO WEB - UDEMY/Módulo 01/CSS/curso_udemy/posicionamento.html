@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pocisionamento</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			body{
+				background: #61bd8c;
+
+			}
+			
+			#conteudo-principal{
+				background: #FFFFFF;
+				padding: 10px;
+				width: 600px; /*Largura*/
+				margin: 30px auto; /*Centraliza as margens*/
+				height: 2500px;
+				margin-top: 120px;
+			}
+
+			.caixa{
+				background: #1e6f44;
+				width: 100px;/*Largura*/
+				height: 100px; /*Altura*/
+				color: #FFFFFF;
+			}
+
+			#relativo{ /*Fica posicionado relativo a ele mesmo.*/
+				position: relative; /*Ela é relativa ao próprio elemento*/
+				left: -30px; /*Podemos colocar o px negativo tb*/
+				top: px; /*Superior*/
+				width: 660px;
+			}
+
+			#absoluto{ /*Se comporta como se não tivesse dentro da div principal ou padrão e fica posicionada referente ao elemento mais proximo, ao body.*/
+				position: absolute;
+				bottom: 0;
+				right: 30px;
+
+			}
+
+			#fixo{ /*Fica referente a tela, ideal para menu fixo */
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				background: #000;
+			
+
+			}
+		</style> 
+		
+	<body>
+		
+		<div id="conteudo-principal">
+
+			<h1>Pocisionamento de elementos</h1>
+			<h2>Relative</h2>
+			<div id="relativo" class="caixa">Relative</div>
+
+			<h2>Absolute</h2>
+			<div id="absoluto" class="caixa">Absolute</div>
+
+			<h2>Fixed</h2>
+			<div id="fixo" class="caixa">Fixed</div>
+		</div>
+	</body>
+
+</html>

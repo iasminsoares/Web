@@ -1,0 +1,225 @@
+
+/* ====================== LAYOUT ====================== */
+html, body, .capa {
+	height: 100%;
+	/*Aplicando na tag html, body e a classe capa tenha uma altura de 100%*/
+	overflow: auto;
+}
+
+body {
+	/* Aplicando as capas de fundo, colocando as cores de degradê e fixando. */
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	overflow-x: hidden; /*o X remove a barra na horizontal e o Y na vertical*/
+	
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block; /*exibição por bloco*/
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain; /*essa propriedade pode-se definir o tamanho da imagem de fundo, 
+								mas contain pega o tamanho da classe*/
+	color: transparent; /*Esconder o texto e deixar somente para leitores de tela.*/
+}
+
+
+nav.navbar-transparente {
+	/*Selecionando a tag nav da barra de navegação e criando a classe navbar-transparente */
+	padding: 15px 0px; /*Definindo altura da barra*/
+	background: rgba(0, 0, 0, 0.6); /*Aplicando efeito transparente com opacidade*/
+	border: none;
+
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+
+	/*O sinal > indica que está selecionando primeiro link do item filho
+	Chamando a classe navbar e os links para colocar cores*/
+
+	color: white;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+
+	/*O sinal > indica que está selecionando primeiro link do item filho
+	Chamando a classe navbar e os links para colocar cores*/
+
+	color: #9bf0e1;
+	background: none;
+
+}
+
+/* -- IMAGEM DE CAPA -- */
+.capa {
+	display: table; /*Comportamento de tabela*/
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell; /*Comportamento de célula de tabela*/
+	vertical-align: middle;
+}
+
+/* BOTÕES */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	/*Aplicando as bordas nos browsers Webkit e moz */
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	/*padding: 10px 35px;
+	margin: 0px 15px; foi substituido por media queries. */
+	text-transform: uppercase; /*Deixando as letras maiusculas*/
+	transition: background 0.4s, color 0.4s;
+
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+/* SEÇÕES DE SERVIÇOS */
+#servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+
+/* SEÇÕES DE RECURSOS */
+#recursos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar { /*rotacionado o elemento em graus*/
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* Internet explorer 9*/]
+	-webkit-transform: rotate(30deg); /*Chrome, safari, Opera*/
+	padding-left: 80px;
+}
+
+/* RODAPÉ */
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
+
+/* ====================== TIPOGRAFIA - EDIÇÃO DE TEXTOS ====================== */
+
+h1 {
+	/*aplicando tamanho em "m"usica para todos"*/
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em; /*Espaçamento entre letras*/
+	margin-bottom: 50px; 
+}
+
+/* aplicando MEDIA QUERIES */
+/* dispositivos XS < 768 */
+@media screen and (max-width: 767px){
+	h1 {
+		font-size: 50px;
+	}
+
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* aplicando MEDIA QUERIES */
+/* dispositivos sm bootstrap */
+@media screen and (min-width: 768px){
+	h1 {
+		font-size: 70px;
+	}
+}
+
+/* aplicando MEDIA QUERIES */
+/* dispositivos md bootstrap */
+@media screen and (min-width: 992px){
+	h1 {
+		font-size: 80px;
+	}
+}
+
+/* aplicando MEDIA QUERIES */
+/* dispositivos lg bootstrap */
+@media screen and (min-width: 992px){
+	h1 {
+		font-size: 100px;
+	}
+}
+
+
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em; /*Espaçamento entre letras*/
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em; /*Espaçamento entre letras*/
+}
+
+#servicos h2, #servicos h3 {
+	color: #7c25f8;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+

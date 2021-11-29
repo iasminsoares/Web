@@ -1,0 +1,22 @@
+Sistema de paginação com PHP, MySQL e JQuery via Ajax
+Abaixo você poderá fazer o download de um exemplo de código demonstrando como podemos implementar paginações de registros utilizando o PHP, MySQL e JQuery através de requisições assíncronas (Ajax).
+
+Passo a passo para montar o ambiente de deste:
+
+1) Baixe o arquivo.
+
+2) Descompacte o arquivo e leve o diretório descompactado para dentro do diretório público do apache.
+
+3) Abra o arquivo "dump_banco_de_dados_teste.sql" com qualquer editor de código fonte, como por exemplo e bloco de notas do windows ou o sublime text. Dentro do arquivo "dump_banco_de_dados_teste.sql" você encontrará as querys para criação do banco de dados, tabela e registros de testes. Execute as querys no MySQL.
+
+4) Abra o arquivo "db.class.php" e ajuste as credenciais de acesso ao banco.
+
+5) Execute a página index.php através do apache no endereço localhost, lembre-se de iniciar o apache e o mysql para efetuar os testes.
+
+
+
+Pronto, você verá o sistema de paginação em funcionamento. Estude o código e faça as adaptações necessárias para implementar o recurso aos seus sistemas ou páginas web.
+
+
+
+Bons estudos :D

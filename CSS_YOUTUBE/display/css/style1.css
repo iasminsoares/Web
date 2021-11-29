@@ -1,0 +1,27 @@
+div, span { /*naturalmente a DIV tem o display block e SPAN o INLINE*/
+	border: 1px solid #000;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+#d1 {
+	display: block;
+	/* display: block; elementos somente na mesma linha*/
+	/*display: none; desabilita o elemento da página como senão existisse*/
+	/*visibility: hidden; oculta o elemento mas deixa o espaço na pagina*/
+
+}
+
+#s1 {
+	display: inline-block; /*permite elementos na msm linha, porém, com o tamanho indicado*/
+	/*display: inline; vários elementos na mesma linha, mas não obedece o tamanho indicado*/
+}
+
+#d2 {
+	display: block;
+}
+
+#s2 {
+	display: inline-block;
+}

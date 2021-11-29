@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Jquery evento - formulário</title>
+
+		<!--LOCAL - <script src="jquery-3.1.1.js"></script> -->
+		
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+		<script type="text/javascript">
+
+			$(document).ready( function(){
+				
+				//focus - 
+				//blur - 
+				//change - 
+
+				$('.campo1').change( function(){
+					alert('elemento foi modificado.');
+
+				});
+
+
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+		<!--<input class="campo1" type="text" />-->
+
+		<select class="campo1">
+			<option value="1">Primeira opçao</option>
+			<option value="2">Segunda opção</option>
+		</select>
+
+
+	</body>
+
+</html>

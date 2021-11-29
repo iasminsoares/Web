@@ -1,0 +1,30 @@
+table, td, th { /*bordas internas e externas */
+	border: 1px solid #000;
+}
+
+table {
+	width: 500px;
+	table-layout: fixed; /*Distribui o msm valor pra as colunas */
+	border-collapse: collapse; /*distancia entre as células, separete é o padrão */
+	/*empty-cells: hide; Como vai trabalhar com células vazias com show ou hide*/
+}
+
+td, th {
+	height: 30px;
+	vertical-align: middle;/*Só funcina com tabelas, alinhamento top, middle ou bottom */
+	text-align: center;
+}
+
+th {
+	background-color: #8a8;
+	color: #fff;
+	font-size: 25px;
+}
+
+tr:nth-child(even){ /*Formatação zebra cor sim e cor não, para toda a tabela*/
+	background: #ddd;
+}
+
+p:nth-child(even){ /*Formatação zebra cor sim e cor não, para toda a tabela*/
+	background: #fdd;
+}

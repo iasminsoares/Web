@@ -1,0 +1,20 @@
+a {
+	text-decoration: none; /*tirar o sublinhado*/
+	color: #fff;
+	font-size: 20px;
+	background: #006;
+	padding: 20px;
+	/* display: table-cell; quebra de linha*/
+}
+a:hover { /*visualização dos links qnd passa o mouse*/
+	background-color: #88a;
+	} 
+
+/*a:link {} links não visitados*/
+
+/* a:visited {} links já visitados*/
+
+/* a:active {} links que estão sendo visitados*/
+
+
+

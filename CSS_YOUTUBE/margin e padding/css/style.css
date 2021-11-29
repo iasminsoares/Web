@@ -1,0 +1,29 @@
+/*MARGIN É UMA METAPROPRIEDADE, de espaçamento externo que pode configurar uma ou mais margens do elemento, sequência: superior, direita, inferior, esquerda; */
+body {margin: 0px;} /*ZERANDO A MARGEM DA PÁGINA */
+
+p { /*manipulando todos os elementos P da página */
+	border: 1px solid #F00; 
+	margin: 0px; 
+	text-align: center; /*alinhando o texto da tag P */ 
+	margin: auto;
+}
+div {
+	border: 1px solid #000; margin: auto; /* margens automaticas, só funcionam se tiver o WIDTH definido primeiro*/
+}
+
+#d1 {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 30px;
+	/* margin-top: 50px;
+	   margin-right: 200px;
+	   margin-bottom: 300px;
+	   margin-left: 50px; SEQUENCIA DAS MARGENS QND DECLARADAS DE FORMA ISOLADA */
+}
+#d1 p {width: 200px;} /*Manipulando somente os P da DIV 1 */
+
+#d2 {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}

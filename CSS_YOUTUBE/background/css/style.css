@@ -1,0 +1,39 @@
+/*body {
+	background-color: #bbb;
+	background-image: url(../img/logo_web_iasmin2.png), url(../img/logo.png) ; 
+	background-size: 200px, 300px; Essa propridade Permite controlar a dimensão da imagem, ou seja, o tamanho
+	background-repeat: no-repeat, repeat; Essa propridade Permite controlar a repeat-x da imagem na horizontal e a Y na vertical 
+	background-position: 200px 200px, 0px 0px; Define a posição do elemento nos lados superiores e inferiores da pagina: bottom ou top
+}
+p{
+	font-size: 30pt;
+	color: #fff;
+	background-color: #0f0;
+	background-image: url(../img/bg.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 8px;
+} 
+
+#d1, #d2, #d3 {
+	border: 10px dotted #000; expessura da linha, tipo de linha e a cor da borda 
+	padding: 50px; margin interna do elemento e qnd colocado somente um valor, ele aplica pros 4 lados da página com o mesmo valor
+	background-image: url(../img/bg.jpg);
+}
+
+#d1 {background-clip: border-box;} padrão: a borda considera como parte do background e começa junto. 
+
+#d2 {background-clip: padding-box;} não considera a borda como parte do background, ou seja, o background começa após a borda
+
+#d3 {background-clip: content-box;} A borda é aplicada somente onde existe conteudo */
+
+/*body {
+	background-image: url(../img/logo-iasmin.png), url(../img/logo.png);
+	background-repeat: no-repeat, repeat;
+	background-size: 400px, 100px;
+	background-attachment: fixed, scroll; deixar a imagem fixa no local qnd rolar a página. Valor padrão: scroll
+}
+
+body {
+	META PROPRIEDADE BACKGROUND
+	background: #aaa url(../img/logo-iasmin.png) no-repeat 0px 0px / 100;
+} */

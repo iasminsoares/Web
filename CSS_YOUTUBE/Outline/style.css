@@ -1,0 +1,14 @@
+body {
+	margin: 20px; /*zerando as margins*/
+	padding: 0px;
+}
+div {
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-color: #ddd;
+	/*border: #000 solid 10px; ocupa mais espaço por conta das bordas */
+	outline:  #000 solid 10px; /*não ocupa espaço das bordas*/
+	outline-offset: 10px; /*distancia o elemento da borda*/
+	border: #f00 solid 1px;
+}

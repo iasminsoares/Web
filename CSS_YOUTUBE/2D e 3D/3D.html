@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> TRANSFORMAÇÕES 3D </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style-3D.css">
+	<script>
+		var x, n=0, ny=0, rotYINT;
+
+		function rotateYDIV (){
+			y=document.getElementById("dv1");
+			clearInterval(rotYINT);
+			rotYINT=setInterval("startYRotate()", 10);
+		}
+		function startYRotate () {
+			ny=ny+1;
+			y.style.transform="rotateY(" + ny + "deg) translate(200px, 200px)";
+			if (ny==180 || ny >=360) {
+				clearInterval(rotYINT);
+				if (ny>=360) {ny=0}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="dv1" onclick="rotateYDIV()">
+		PodLutarCast
+	</div>
+</body>
+</html>

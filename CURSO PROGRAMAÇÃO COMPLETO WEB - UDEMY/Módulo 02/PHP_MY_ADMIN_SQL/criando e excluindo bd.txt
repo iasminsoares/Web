@@ -1,0 +1,17 @@
+                                          BANCO DE DADOS PHPMYADMIN
+
+CRIANDO E EXCLUINDO BANCO DE DADOS
+
+utilizando o conjunto de instruções DDL  que são os comandos SQL pra estruturação de daodos.
+
+SQL -> comando: CREATE DATABASE + o nome do banco de dados COM PONTO E VIRGULA + EXECUTAR e BANCO CRIADO
+
+ALTERANDO NOME DA TABELA: clique no BD > operações > renomeiar nome do banco > executar
+
+REMOVENDO - comando: DROP DATABASE + o nome do banco de dados COM PONTO E VIRGULA + EXECUTAR
+
+OU CRIAR PELO 'NEW' (no canto esquerdo da tela), digitar o nome do bd e criar.
+Para excluir, selecione o banco de dados > OPERAÇÕES > remover base de dados drop
+
+
+

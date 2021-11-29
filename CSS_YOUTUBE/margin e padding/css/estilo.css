@@ -1,0 +1,21 @@
+/*METAPROPRIEDADE PADDING - margem interna, por isso,  ao utilizar padding ele será add o valor do padding ao valor largura */
+/* pode configurar uma ou mais margens do elemento, sequência: superior, direita, inferior, esquerda;
+	padding-top: 50px;
+	padding-right: 200px;
+	padding-bottom: 300px;
+	pading-left: 50px; SEQUENCIA DAS MARGENS QND DECLARADAS DE FORMA ISOLADA */
+body {margin: 0px;}
+
+div {
+	border: 1px solid #000; 
+	width: 500px;
+	margin: auto; /*MARGEM EXTERNA*/
+	margin-bottom: 50px; /*MARGEM INFERIOR*/
+}
+
+#d1 {
+	
+	padding: 100px; /*MARGEM INTERNA */
+}
+
+#d2 {padding: 50px;}

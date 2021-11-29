@@ -1,0 +1,15 @@
+/*transformações 2d afetam nos eixos X e Y*/
+#dv1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	/* transform: translate(0px, 0px); A translate move o objeto de um ponto original pra um ponto especificado*/
+	transform: rotate(15deg); /* rotação em graus */
+	/*transform: scale(1) translate(200px,200px); dobra o tamanho em escala */
+	/*transform: skewX(0deg); inclinação em graus na horizontal */
+	/*transform: skewY(45deg); inclinação em graus na vertical */
+	/*transform: skew(-45deg,0deg); informa o X e Y*/
+	/*transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY); todas as propriedades de transformação */
+	/*transform: matrix(2,0,0,2,0,0); */
+	transform-origin: 0% 100% ; /*rotação de um ponto de origem fixo */
+}

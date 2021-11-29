@@ -1,0 +1,38 @@
+a{
+	text-decoration: none;
+	padding: 5px;
+	color: black;
+	font-style: oblique;
+	font-weight: bold;
+	font-family: "Palatino Linotype";
+	font-size: 20px;
+	
+}
+a:hover{
+		color: #B4B5C8; /*Branco*/
+		background: white; /*verde escuro*/
+}
+
+body{
+	background: #B4B5C8;
+	/*background-image: url("imagens/fundo.jpg");*/
+	font-style: normal;
+	font-family: "Palatino Linotype";
+	font-size: 20px;
+}
+
+img{
+	padding: 5px;
+	margin: 5px;
+}
+
+.margem{
+	padding: 5px;
+	}
+.resultado{
+	background: #FFFFFF;
+	width: 265px; /*LARGURA*/
+	padding: 5px;
+	float: left;
+	margin: 5px;
+}

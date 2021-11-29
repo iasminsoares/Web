@@ -1,0 +1,35 @@
+INSERINDO REGISTRO NA TABELA
+
+forma visual: selecione a tabela > opção insere > preencher os valores
+
+forma SQL: selecione o banco de dados > SQL > digite o comando e os registro de forma ordenada.
+forma SQL: INSERT into tb_cursos(ativo_sn, carga_horaria, data_inicio, id_curso, investimento, nome_curso, resumo)
+values('S', 10, '20200327', 2, 0, 'Curso Básico de HTML', 'Aprenda a criar páginas HTML')
+
+RECUPERANDO DADOS DA TABELA
+
+SQL: select campos from tabela
+select ativo_sn, carga_horaria, data_inicio, id_curso, investimento, nome_curso, resumo from tb_cursos
+
+Podemos usar o asterisco * no lugar de campos, pois ao colocar, ele chama todos os campos da tabela.
+ex: select * from tb_cursos
+
+
+SELECIONANDO REGISTRO MAIS AVANÇADOS
+
+selecione o bd > tabela q deseja > SQL: select * from 'tb_pessoas' WHERE idade <= 20 AND estado = 'MG' AND interesse = 'Jogos'
+EX2: SELECT * FROM 'tb_pessoas' WHERE estado = 'SP' OR estado = 'BA
+
+ATUALIZANDO REGISTROS NA TABELA
+
+via SQL: update + tabela  + set + campo q irá ser alterado c/ alteração WHERE + condição .
+ex: update tb_pessoas set nome = 'Maria" WHERE id = 3
+	update tb_pessoas set interesse = 'Saúde' WHERE idade >= 80
+    update tb_pessoas set nome = 'José da Silva', idade = 14, email = 'jose.silva@contato.com.br' WHERE id = 14
+Utilizar o WHERE é necessário pra informar onde será alterado, senão altera todos os registro da tabela
+
+EXCLUIR REGISTROS
+OBS: Cuidado ao deletar pra colocar o WHERE e não apagar todos os registros da tabela
+comando: delete from + tabela + where + condição 
+ex: delete from tb_pessoas WHERE idade = 20 and interesse = 'Esporte'
+

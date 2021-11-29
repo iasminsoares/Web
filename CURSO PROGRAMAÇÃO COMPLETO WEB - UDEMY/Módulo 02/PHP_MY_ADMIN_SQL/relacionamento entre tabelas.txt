@@ -1,0 +1,18 @@
+RELAÇÕES ENTRE TABELAS
+	Criando relação:
+chave primária - é o campo definido pra relacionar com as outras tabelas. Ao definir um campo como chave primária, ele 
+vai esperar um valor único, posteriormente ao tentar passar novamente, pode ocorrer um conflito. Existe um recurso 
+para este tipo função: AUTO_INCREMENT que começa com 1 e a cada nova inserção ele incrementa o valor do registro +1.
+comando: id_funcionario int not full PRIMARY KEY. 
+
+chave estrangeira, comando: foreign key(chave estrangeira) + REFERENCES + informando a origem da chave estrangeira
+ex: fereign key(id_funcionarios) REFERENCES tb_funcionarios(id_funcionario)
+
+CREATE TABLE tb_funcionarios_dados_contato(
+    id_funcionario_dados_contato int not null PRIMARY key AUTO_INCREMENT,
+    id_funcionario int null, -> faz referencia a tabela primária de forma 1 para 1
+    telefone_fixo varchar(20),
+    telefone_celular varchar(20),
+    FOREIGN KEY (id_funcionario) REFERENCES tb_funcionarios(id_funcionario)
+    
+)

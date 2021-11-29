@@ -1,0 +1,28 @@
+ol {
+	list-style: none;
+	padding: 0px;
+
+	/*list-style-image: url(marcador.png);*/
+	/* list-style-type: square; tipo de marcador. circle entre outros*/
+	/*list-style-position: inside; adicionado o marcador dentro da borda da lista. Outside valor padrão*/
+	/*list-style: decimal-leading-zero outside; metapropriedade configuração de forma conjunta*/
+}
+
+li {
+	width: 150px;
+	height: 40px;
+	background-color: #800;
+	display: table-cell; /*célula de tabela na horizontal*/
+	vertical-align: middle; /*célula de tabela na horizontal*/
+	text-align: center;
+	border-right: 1px solid #FFF;
+	/*border: 1px solid #000000;*/
+}
+li:hover {
+	background-color: #f00;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}

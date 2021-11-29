@@ -1,0 +1,21 @@
+/*
+#d1 {
+	width: 600px;
+	height: 300px;
+	border: 1px solid #000;
+	
+	background: repeating-linear-gradient(90deg, #f00 0%, #ff0 20%); repetindo o gradiente
+	background: radial-gradient(circle, #f00 0%, #ff0 50%); Começando do centro pras extremidades
+	background: linear-gradient(180deg, #f00 0%, #ff0 25%, #00f 50%); gradiente em forma de linha, da esquerda para a direita
+	background: linear-gradient(to to right, #f00, #ff0); para baixo 
+	background: linear-gradient(45deg, #f00, #ff0); angulo de 45 graus
+	background: linear-gradient(to bottom, #f00, #ff0); para baixo 
+}	
+*/
+	
+h1 {
+	font-size: 100pt;
+	background: linear-gradient(90deg, #f00 0%, #ff0 20%);
+	-webkit-text-fill-color: transparent; /*deixando o texto transparente*/
+	-webkit-background-clip: text ; /*corte do background na área do texto */
+}

@@ -1,0 +1,8 @@
+AJAX - DEFINIÇÃO
+
+Requisição - solicitações ao servidor
+
+Síncrono - quando tem uma requisição, o browser fica aguardando até o servidor responder. Cada requisição deve ser finalizada
+para que outra possa ser efetuada.
+
+Assíncrono - O brwoser consegue enviar várias requisições de forma paralela, as respostas é retornada quando estiver pronta.

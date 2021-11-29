@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS qtde_tweets FROM tweet WHERE id_usuario = 3
+
+Ao invés de retornar todo o conteúdo contido em cada resgistro, e COUNT()* retorna somente a quantidade de registros.

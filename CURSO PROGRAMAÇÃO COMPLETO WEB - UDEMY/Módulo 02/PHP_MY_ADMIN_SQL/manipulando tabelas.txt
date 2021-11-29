@@ -1,0 +1,41 @@
+CRIANDO TABELAS E TIPOS DE DADOS
+
+As tabelas precisam ter nomes e tipos de dados, para criar forma visual, clique no banco de dados q deseja, coloque o NOME DA TABELA 
+e o NÚMERO DE COLUNAS (de acordo com o projeto q será armazenado). Segue exemplos:
+
+OBS: a nomenclatura não é aceito caracteres especiais.
+nome - id_curso
+tipo - INT
+tamanho/valores - não precisa informar qnd for tipo INT
+Predefinido - permite q o numero seja não pode ser null, obrigatório ou q tenha um valor especifico.
+Agrupamento(collation - 
+Atributos - 
+Nulo - 
+Índice- 
+
+CRIANDO TABELA VIA SQL(códigos)
+
+CREATE TABLE tb_cursos(
+   id_cursos int not null,
+   nome_curso varchar(100) not null,
+   resumo text null,
+   data_inicio date null,
+   ativo_sn char(1) default 'S',
+   investimento float(8,2) default 0
+) CLIQUE EM EXECUTAR
+
+INCLUINDO, EXCLUINDO E ALTERANDO TABELA
+Para renomeiar a tabela de forma visual, selecione a tabela > operações > opções da tabela e altere o nome.
+Para renomeiar via SQL, selecione a tabela > SQL > comando: RENAME TABLE nome tabela + TO + NOME DA TABELA ATUAL, em seguida atualize a pagina do banco.
+RENAME TABLE tb_cursos TO tb_cursos_teste
+
+incluir coluna via sql, comando: ALTER TABLE + nome tabela + ADD COLUMN + nome da coluna, tipo e predefinido, ex:
+ALTER TABLE tb_cursos ADD COLUMN carga_hora VARCHAR(4) NULL;
+PRA EXCLUIR UMA TABELA VIA SQL: DROP TABLE tb_cursos_unincor
+aterando coluna tabela via sql - ALTER TABLE tb_cursos CHANGE carga_hora carga_horaria int null;
+excluindo coluna na tabela via sql - alter table + nome tabela + DROP + nome coluna
+comando: alter table tb_cursos DROP carga_horaria
+  
+
+
+

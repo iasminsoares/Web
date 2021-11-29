@@ -1,0 +1,14 @@
+/*@font-face {
+	font-family: fontBJJ;
+	src: url(ft/GOTHAM-MEDIUM.TTF); definindo a própria fonte que tá instalasa no pc
+}
+p {
+	font-family: fontBJJ; formata o tipo de grupo de fontes.*/
+p {
+	font-family: 'Indie Flower', cursive;
+	font-style: italic; /*formata a inclinação do texto como italico ou oblique*/
+	font-weight: lighter; /*define o negrito do texto: bold*/
+	font-size: 30px; /*tamanho da fonte*/
+	font-variant: normal; /*fonte em caixa alta, porem, a primeira letra fica maior: small-caps*/
+	
+}

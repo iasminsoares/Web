@@ -1,0 +1,46 @@
+div {
+	width: 300px;
+	height: 100px;
+	border: 1px solid #000;
+	white-space: normal; /*quebra a linhda o texto dentro de um container, nowrap não quebra*/
+	overflow: auto; /*controla qual vai ser o comportamento do conteudo q tá transbordando | hidden | scroll*/
+	word-break:break-all; /*quebra da palavra onde é necessário*/
+
+}
+
+p{
+	color: #000; /*cor do elemento*/
+	text-decoration: none;
+	text-transform: capitalize; /*define o tipo de texto, minusculo ou maiusculo */
+	text-align: justify;
+	text-indent: 50px; /*identação do texto */
+	letter-spacing: 0px; /*espaçamentos das letras*/
+	line-height: 2;/*espaçamento da linha, altura*/
+	direction: ltr; /*diração do texto: rtl - direita p/ esquerda | ltr - esquerda p/ direita */
+	word-spacing: 5px;/*espaçamento entre as palavras*/
+	text-align-last: center; /*alinhamento da ultima linha do paragrafo | right e left*/
+	
+}
+
+.p1{ 
+	/* text-align: left; alinhamento a esquerda */
+	/* text-decoration: none;  tira o sublinhado padrão dos links */
+	/*text-transform: uppercase; define o tipo de texto, minusculo ou maiusculo */
+}
+.p2{
+	/* text-align: right; alinhamento a direita */
+	/* text-decoration: underline;  tira o sublinhado padrão dos links */
+	/*text-transform: lowercase; define o tipo de texto, minusculo ou maiusculo */
+}
+.p3{
+	/* text-align: center; alinhamento ao centro */
+	/* text-decoration: overline;  tira o sublinhado padrão dos links */
+}
+.p4{
+	/* text-align: justify; alinhamento a justificado */
+	/* text-decoration: line-through;  tira o sublinhado padrão dos links */
+}
+
+a {
+	text-decoration: none;
+}

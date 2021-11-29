@@ -1,0 +1,10 @@
+Enviando e-mais via GMail com PHPMailer (Bônus)
+Utilize o link abaixo para fazer o download da bibliteca PHPMailer e do script pré-configurado "envia_email_gmail.php".
+
+Através deste projeto você poderá configurar o script "envia_email_gmail.php" para permitir que sua aplicação envie e-mails através do servidor smtp do GMail.
+
+
+
+Att 
+
+Jorge Sant Ana

@@ -1,0 +1,22 @@
+SELECT COM LEFT JOIN
+
+LEFT JOIN/right join - nos permite conectar tabelas diferentes, formando um resultado de pesquisa composto. A consulta irá retornar registros compostos
+por diversos atributos em tabelas diferentes. Desde que, conectados com alguns atributos em comum.
+
+LEFT JOIM - junção a esquerda, permite junção entre tabelas, onde o ponto de ligação será referencia a esquerda.
+
+INNER JOIN - junção interna, permite junção entre tabelas de um ponto em comum.
+
+RIGHT JOIN - junção a DIRETA, permite junção entre tabelas, onde o ponto de ligação será referencia a DIREITA.
+
+comando: select * from + tabela + apelido + left join + segunda tabela + apelido + on + chave estrangeira
+ex: select * from tb_funcionarios as f left join tb_funcionarios_dados_contato as fc on (f.id_funcionarios = fc.id_funcionarios)
+Ou seja, selecione todos os registros da tabela funcionários com o apelido F para fazer um left join com a tabela tb_funcionarios
+conectando os registros de funcionarios através do id_funcionarios que é uma chave estrangeira na tabela FC apelido na tb_funcionarios_dados_contato
+
+ex: 
+
+SELECT u.*, us.* 
+FROM usuarios AS u 
+LEFT JOIN usuarios_seguidores AS us ON (us.id_usuario = 3 AND u.id = us.seguindo_id_usuario)
+WHERE u.usuario LIKE '%a%' AND u.id <> 3

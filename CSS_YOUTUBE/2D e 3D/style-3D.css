@@ -1,0 +1,12 @@
+/*transformações 3d afetam nos eixos X , Y e Z */
+#dv1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+
+	transform: translate(200px, 200px); /*rotação no mesmo lugar do eixo*/
+	backface-visibility: visible;
+	transform-origin: 200px 200px;
+}
+
+body {perspective: 800px;}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formatação de Links</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			a{
+				text-decoration: none;
+				padding: 5px;
+			}
+			
+			/*Links não visitados*/
+			a:link{
+				color: orange;
+			}
+
+			/*Links visitados*/
+			a:visited{
+				color: grey;
+			}
+
+			/*Links Hover, passa o cursor sobre o link*/
+			a:hover{
+				color: #FFF; /*Branco*/
+				background: #6d790f; /*verde escuro*/
+			}
+			/*Links Ativos, quando clidado*/
+				a:active{
+				color: green;
+			}
+			
+		</style> 
+		
+	<body>
+		<a href="https://www.google.com.br">Google</a> |
+		<a href="http://www.cbjj.com.br">CBJJ</a> |
+		<a href="http://www.tecmundo.com.br">Tec Mundo</a> |
+		<a href="http://www.ydhwr.com.br">YD</a>
+	</body>
+
+</html>

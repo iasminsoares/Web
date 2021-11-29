@@ -1,0 +1,10 @@
+.item {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	overflow: auto;
+
+	/*scroll - barra de lorragem
+	  hidden - esconde o conteúdo fora da caixa
+	  auto - mostra a barra de lorragem automaticamente.*/
+}
